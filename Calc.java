@@ -39,7 +39,10 @@ public class Calc {
 	
 	public static int divide(int a, int b){
 		int temp;
-		temp = a / b;
+		if(b==0)
+		  System.out.println("Error you cannot divide by 0");
+		else
+		  temp = a / b;
 		return temp;
 		
 	}
