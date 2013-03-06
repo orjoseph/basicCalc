@@ -18,7 +18,11 @@ public class Calc {
 	
 	public static int sub(int a, int b){
 		int temp;
-		temp = a - b;
+		//avoiding a negative result
+		if(a==0)
+		     System.out.println("You will get a negative number if you subtract 0 from a number");
+		else
+		     temp = a - b;
 		return temp;
 		
 	}
